@@ -13,6 +13,7 @@ public class DeleteMethodOfRestAssured {
 			
 			RequestSpecification  reqspec = RestAssured.given();
 			reqspec.contentType(ContentType.JSON);
+			reqspec.header("Content-Type", "application/json");
 			reqspec.pathParam("pageNumber", 2);
 						
 			Response res = reqspec.delete(baseUrl+"/api/users/{pageNumber}");
