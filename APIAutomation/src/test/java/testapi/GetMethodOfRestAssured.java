@@ -10,8 +10,6 @@ public class GetMethodOfRestAssured {
 		Response res = get("https://reqres.in/api/users?page=2");
 		
         System.out.println(res.getStatusCode());
-		System.out.println( res.getBody().asPrettyString());
-	
+		System.out.println( res.getBody().asPrettyString());	
 	}
-
 }
