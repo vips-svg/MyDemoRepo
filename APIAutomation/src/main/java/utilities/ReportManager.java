@@ -20,7 +20,7 @@ public class ReportManager {
         extent = new ExtentReports();
         extent.attachReporter(sparkReporter);
         extent.setSystemInfo("Environment", "QA");
-        extent.setSystemInfo("Tester", "Your Name");
+        extent.setSystemInfo("Testing Type", "API");
     }
 
     public static void createTest(String testName) {
