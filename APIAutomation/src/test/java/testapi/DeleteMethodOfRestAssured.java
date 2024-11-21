@@ -1,13 +1,19 @@
 package testapi;
 
+import org.testng.annotations.Test;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import utilities.ReportManager;
 
-public class DeleteMethodOfRestAssured {
+public class DeleteMethodOfRestAssured extends BaseTest {
 
-	public static void main(String[] args) {
+	@Test
+	public  void testDelete_API() {
+		
+		ReportManager.createTest("Test for DELETE  API"); 
 		
 		String baseUrl= "https://reqres.in";
 			
@@ -20,6 +26,13 @@ public class DeleteMethodOfRestAssured {
 				        	res.then().assertThat().statusCode(204);
 					
 			System.out.println(res.statusLine());
+			
+			if (res.statusCode() == 204) {
+		          ReportManager.logPass("API responded with correct status code: " + res.statusCode());
+		        } 
+		 else {
+		         ReportManager.logFail("Expected 200 but received: " + res.statusCode());
+		        }
 
 	}
 

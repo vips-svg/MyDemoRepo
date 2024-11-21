@@ -1,14 +1,20 @@
 package testapi;
 
+import org.testng.annotations.Test;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import utilities.ReportManager;
 
-public class PatchMethodOfRestAssured {
+public class PatchMethodOfRestAssured extends BaseTest {
 
-	public static void main(String[] args) {
+	@Test
+	public  void testPATCH_API() {
+		
+		ReportManager.createTest("Test for PATCH  API"); 
 	
-String patchrequestbodydata = "{\"id\":\"2\",\"firstname\" : \"mr satish\", \"lastname\" : \"kumar\"}";
+       String patchrequestbodydata = "{\"id\":\"2\",\"firstname\" : \"mr satish\", \"lastname\" : \"kumar\"}";
 		
         String baseUrl= "https://reqres.in";
 		
@@ -22,6 +28,13 @@ String patchrequestbodydata = "{\"id\":\"2\",\"firstname\" : \"mr satish\", \"la
 		
 		System.out.println(res.asPrettyString());
 		System.out.println(res.statusLine());
+		
+		if (res.statusCode() == 200) {
+	          ReportManager.logPass("API responded with correct status code: " + res.statusCode());
+	        } 
+	 else {
+	         ReportManager.logFail("Expected 200 but received: " + res.statusCode());
+	        }
 		
 	}
 
