@@ -1,5 +1,6 @@
 package testapi;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -50,6 +51,7 @@ public class GetMethodOfRestAssured extends BaseTest{
 	            .get("/users?page=2");
 	        
              System.out.println("Status code is:"+response.getStatusLine());
+             Assert.assertEquals(response.getStatusCode(), 404);
 
              // we are logging the result based on output
 	        if (response.statusCode() == 200) {
