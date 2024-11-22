@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testapi.PostMethodOfRestAssured">
+      <class name="testapi.Two_GetMethodOfRestAssured">
         <methods>
+          <include name="testGetAPI1"/>
           <include name="setup"/>
+          <include name="testGetAPI3"/>
           <include name="tearDown"/>
-          <include name="testPOSTAPI"/>
+          <include name="testGetAPI2"/>
         </methods>
-      </class> <!-- testapi.PostMethodOfRestAssured -->
+      </class> <!-- testapi.Two_GetMethodOfRestAssured -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

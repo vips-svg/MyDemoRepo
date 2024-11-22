@@ -8,17 +8,6 @@ import io.restassured.response.Response;
 import utilities.ReportManager;
 
 public class GetMethodOfRestAssured extends BaseTest{
-	/*		
-	public static void main(String[] args) {
-
-		Response res = get("https://reqres.in/api/users?page=2");
-		
-        System.out.println(res.getStatusCode());
-		System.out.println( res.getBody().asPrettyString());	
-		
-	}      */
-	
-
 	    @Test
 	    public void testGetAPI1() {
 	  ReportManager.createTest("Test1 for GET API");
@@ -46,7 +35,7 @@ public class GetMethodOfRestAssured extends BaseTest{
 
 	        Response response = RestAssured
 	            .given()
-	            .baseUri("https://reqres.in/api---")
+	            .baseUri("https://reqres.in/api")
 	            .when()
 	            .get("/users?page=2");
 	        

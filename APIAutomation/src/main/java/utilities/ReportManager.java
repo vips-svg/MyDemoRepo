@@ -34,6 +34,10 @@ public class ReportManager {
     public static void logFail(String message) {
         test.fail(message);
     }
+    
+    public static void logInfo(String message) {
+        test.info(message);
+    }
 
     public static void flushReport() {
         extent.flush();
