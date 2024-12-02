@@ -28,7 +28,8 @@ public class PostMethodOfRestAssured extends BaseTest {
 		System.out.println(res.statusLine());
 		
 		String getActualTitleValue = res.jsonPath().getString("title");
-        String expectedTitleValue = "Mr. V";    
+        String expectedTitleValue = "Mr. V";   
+        
         Assert.assertTrue(getActualTitleValue.equals(expectedTitleValue));
         
         if (getActualTitleValue.equalsIgnoreCase(expectedTitleValue)) {
