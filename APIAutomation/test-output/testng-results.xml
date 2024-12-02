@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-22T17:59:09 IST" name="Default suite" finished-at="2024-11-22T17:59:12 IST" duration-ms="2333">
+  <suite started-at="2024-12-02T12:15:40 IST" name="Default suite" finished-at="2024-12-02T12:15:44 IST" duration-ms="3802">
     <groups>
     </groups>
-    <test started-at="2024-11-22T17:59:09 IST" name="Default test" finished-at="2024-11-22T17:59:12 IST" duration-ms="2333">
-      <class name="testapi.Three_GetMethodOfRestAssured">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testapi.Three_GetMethodOfRestAssured@791f145a]" started-at="2024-11-22T17:59:09 IST" name="setup" finished-at="2024-11-22T17:59:10 IST" duration-ms="232" status="PASS">
+    <test started-at="2024-12-02T12:15:40 IST" name="Default test" finished-at="2024-12-02T12:15:44 IST" duration-ms="3802">
+      <class name="testapi.Second_PostMethodOfRestAssured">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testapi.Second_PostMethodOfRestAssured@4b45a2f5]" started-at="2024-12-02T12:15:40 IST" name="setup" finished-at="2024-12-02T12:15:40 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testGetAPI()[pri:0, instance:testapi.Three_GetMethodOfRestAssured@791f145a]" started-at="2024-11-22T17:59:10 IST" name="testGetAPI" finished-at="2024-11-22T17:59:12 IST" duration-ms="1804" status="PASS">
+        <test-method signature="testPOSTAPI()[pri:0, instance:testapi.Second_PostMethodOfRestAssured@4b45a2f5]" started-at="2024-12-02T12:15:40 IST" name="testPOSTAPI" finished-at="2024-12-02T12:15:43 IST" duration-ms="3203" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetAPI -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testapi.Three_GetMethodOfRestAssured@791f145a]" started-at="2024-11-22T17:59:12 IST" name="tearDown" finished-at="2024-11-22T17:59:12 IST" duration-ms="261" status="PASS">
+        </test-method> <!-- testPOSTAPI -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testapi.Second_PostMethodOfRestAssured@4b45a2f5]" started-at="2024-12-02T12:15:43 IST" name="tearDown" finished-at="2024-12-02T12:15:44 IST" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testapi.Three_GetMethodOfRestAssured -->
+      </class> <!-- testapi.Second_PostMethodOfRestAssured -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
